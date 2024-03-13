@@ -1,0 +1,7 @@
+function compareTriplets(a, b) {
+    let pontuação = [0,0]
+
+    for (let i = 0; i < a.length; i++)
+        a[i] > b[i] ? pontuação[0]++ : a[i] < b[i] ? pontuação[1]++ : "";
+    return pontuação;
+}
